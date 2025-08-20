@@ -3,7 +3,7 @@ import { Image, View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 import { Dimensions } from 'react-native';
 const windowWidth = Dimensions.get('window').width;
 
-export default function DogScreen({navigation}){
+export default function AcessScreen({navigation}){
     return (
 
    
@@ -22,7 +22,7 @@ export default function DogScreen({navigation}){
       
 
     
-              <TouchableOpacity style = {styles.button1}>
+              <TouchableOpacity style = {styles.button1} onPress={() => navigation.navigate('LoginScreen')}>
                      <Image
                     style={styles.google}
                      source={require('./assets/Google.png')}
@@ -30,7 +30,7 @@ export default function DogScreen({navigation}){
                     <Text style = {styles.txtbutton1}>Como deseja acessar?</Text>
                  </TouchableOpacity>
            
-                <TouchableOpacity style={styles.button2}>
+                <TouchableOpacity style={styles.button2} onPress={() => navigation.navigate('CadastrateScreen')}>
                     <Text style = {styles.txtbutton2}>Outras opções</Text>
                 </TouchableOpacity>
            

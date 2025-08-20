@@ -12,12 +12,12 @@ export default function DogScreen({navigation}){
                 style={styles.dogImage}
                 source={ require('./assets/dog.png') }
             />
-            <View>
+            
                 <Text style = {styles.h1}>Ótimo dia!</Text>
-            </View>
-            <View>
+            
+            
                 <Text style = {styles.h3}>Como deseja acessar?</Text>
-            </View>
+            
             
       
 
@@ -29,11 +29,11 @@ export default function DogScreen({navigation}){
                     />
                     <Text style = {styles.txtbutton1}>Como deseja acessar?</Text>
                  </TouchableOpacity>
-           <View>
+           
                 <TouchableOpacity style={styles.button2}>
                     <Text style = {styles.txtbutton2}>Outras opções</Text>
                 </TouchableOpacity>
-            </View>
+           
         </View>
         
      );} 
@@ -46,18 +46,12 @@ const styles = StyleSheet.create({
     },
 
     h1: {
-        marginLeft: windowWidth * 0.25,
-        justifyContent: "center",
-        alignItems: "center",
         color: "#32404d",
         fontSize: 40,
         marginBottom: windowWidth * 0.02,
     },
 
     h3: {
-        marginLeft: windowWidth * 0.3,
-        justifyContent: "center",
-        alignItems: "center",
         color: "#32404d",
         fontSize: 14,
     },
